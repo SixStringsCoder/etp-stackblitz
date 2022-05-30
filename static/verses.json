@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "verse-1",
+    "id": "Verse 1",
+    "audio": "https://learning.pariyatti.org/pluginfile.php/5772/mod_page/content/52/verse_1.mp3",
+    "devanagari":"\r\nसोपि भगवा अरहं,\r\nसम्मासम्बुद्धो सयम्भू;\r\nविज्‍जाचरणसम्पन्‍नो,\r\nबुद्धं तं पणमाम्यहं.",
+    "romanpali": "\r\nSopi bhagavā arahaṃ,\r\nSammāsambuddho sayambhū;\r\nVijjācaraṇasampanno,\r\nBuddhaṃ taṃ paṇamāmyahaṃ.\r\n",
+    "english": "I bow to the Buddha,\r\nTo Him, who was freed from all impurities, the Worthy One,\r\nEnlightened by his own efforts, Lord of oneself,\r\nPerfect in theory and practice.\r\n",
+    "quizlet": "https://quizlet.com/191531408/flashcards/embed",
+    "vocabulary": [
+      {
+        "wordId": "bhagava",
+        "word": "bhagavā",
+        "meaning": "freed from all impurities",
+        "composition": "",
+        "related-verse": "Verse 1"
+      },
+      {
+        "wordId": "araham",
+        "word": "arahaṃ",
+        "meaning": "the Worthy One, sanctified",
+        "composition": "",
+        "related-verse": "Verse 1"
+      },
+      {
+        "wordId": "sammasambuddho",
+        "word": "sammāsambuddho",
+        "meaning": "enlightened by his own efforts",
+        "composition": "",
+        "related-verse": "Verse 1"
+      },
+      {
+        "wordId": "sayambhu",
+        "word": "sayambhū",
+        "meaning": "Lord of oneself",
+        "composition": "",
+        "related-verse": "Verse 1"
+      },
+      {
+        "wordId": "vijjacaranasampanno",
+        "word": "vijjācaraṇasampanno",
+        "meaning": "perfect in theory and practice",
+        "composition": "vijjā + caraṇa + sampanno wisdom + practise + being endowed",
+        "related-verse": "Verse 1"
+      },
+      {
+        "wordId": "panamati",
+        "word": "paṇamati",
+        "meaning": "to bent, bow",
+        "composition": "",
+        "related-verse": "Verse 1"
+      },
+      {
+        "wordId": "panamamyaham",
+        "word": "paṇamāmyahaṃ",
+        "meaning": "bent + I",
+        "composition": "paṇamāmi + ahaṃ",
+        "related-verse": "Verse 1"
+      }
+    ]
+  },
+  {
+    "slug": "verse-2",
+    "id": "Verse 2",
+    "audio": "https://learning.pariyatti.org/pluginfile.php/5807/mod_page/content/8/verse_2.mp3",
+    "devanagari": "\r\nपुरिसदम्मसारथी,\r\nलोकविदू अनुत्तरो;\r\nसत्थादेवमनुस्सानं,\r\nबुद्धं तं पणमाम्यहं.",
+    "romanpali": "\r\nPurisadammasārathī,\r\nLokavidū anuttaro;\r\nSatthādevamanussānaṃ,\r\nBuddhaṃ taṃ paṇamāmyahaṃ.\r\n",
+    "english": "I bow to the Buddha,\r\nTrainer of men,\r\nIncomparable knower of all the worlds,\r\nTeacher of gods and men alike.\r\n",
+    "quizlet": "https://quizlet.com/193190108/flashcards/embed",
+    "vocabulary": [
+      {
+        "wordId": "purisadammasarathi",
+        "word": "purisadammasārathī",
+        "meaning": "trainer of men",
+        "composition": "purisa + damma + sārathī men + trainer + charioteer",
+        "related-verse": "Verse 2"
+      },
+      {
+        "wordId": "lokavidu-anuttaro",
+        "word": "lokavidū anuttaro",
+        "meaning": "incomparable knower of all the worlds",
+        "composition": "loka + vidū + anuttaro world/universe + knowing + incomparable/unrivalled",
+        "related-verse": "Verse 2"
+      },
+      {
+        "wordId": "vsattha-devamanussanam",
+        "word": "vsatthā devamanussānaṃ",
+        "meaning": "teacher of gods and men alike",
+        "composition": "",
+        "related-verse": "Verse 2"
+      }
+    ]
+  }
+]
