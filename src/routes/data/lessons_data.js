@@ -1,4 +1,4 @@
-export const suttaData = [
+export const lessonsData = [
 	{
 		id: '1-1-1',
 		paliname: 'Bahujanahitasuttaṃ',
