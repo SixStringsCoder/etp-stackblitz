@@ -2,7 +2,9 @@
     let subNavOpen;
     export let chapterLessons;
     export let url;
-    export let isOpen;
+    // export let isOpen;
+
+    $: console.log(Number(chapterLessons[0].slug.substring(8, 9))-1)
 
     // $:console.log(chapterIndex, chapterLessons)
     const handleSubNav = () => {
@@ -13,19 +15,21 @@
 </script>
 
             <!--  SubNave Menu when Chapter is clicked  -->
-            <button class="dropdown-btn" >{chapterNum}
+            <button class="dropdown-btn" on:click={handleSubNav}>
+                {chapterNum}
                 <i class="fa fa-caret-down"
-                   class:fa-caret-up={subNavOpen}
-                    on:click={handleSubNav} >
+                   class:fa-caret-up={subNavOpen}>
                 </i>
             </button>
             <ul class="dropdown-container"
                  class:show-submenu={subNavOpen}>
-                {#each chapterLessons as lessonObj}
+                {#each chapterLessons as lessonObj, i}
 <!--                    TODO on click is not rendering on li-->
-                    <li on:click={() => isOpen = false}>
-                        <a href={`${url}${lessonObj.slug}`}>
-                        {lessonObj.id} {lessonObj.engname}
+                    <li on:click>
+                        <a href={`${url}${lessonObj.slug}`}
+                           data-chap-index={Number(chapterLessons[0].slug.substring(8, 9))-1} 
+                           data-lesson-index={i}>
+                              {lessonObj.id} {lessonObj.engname}
                         </a>
                     </li>
                 {/each}

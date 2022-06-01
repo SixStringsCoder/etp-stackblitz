@@ -1,16 +1,25 @@
 <script>
-    import {lessonsData} from '../routes/data/lessons_data.js';
+	import {lessonsData} from '../routes/data/lessons_data.js';
 	import SideNav from "./SideNav.svelte";
 
 	// TODO make header button dynamic
 
-	let chapterIndex = 0;
+	
+	let chapIndex = 0;
 	let lessonIndex = 0;
-    let  {slug, id, paliname, engname, definition } = lessonsData[chapterIndex].lessons[lessonIndex];
+	$: console.log(chapIndex, lessonIndex)
+  // let  {slug, id, paliname, engname, definition } = lessonsData[chapIndex].lessons[lessonIndex];
+  $: lesson = lessonsData[chapIndex].lessons[lessonIndex];
+
+
+	const setIndices = (e) => {
+        chapIndex = e.target.dataset.chapIndex
+        lessonIndex = e.target.dataset.lessonIndex
+	}
 
 	// export let hiLiteSel;
 
-	const rootURL = 'http://localhost:3000/exploring-the-path/'
+	const rootURL = 'http://localhost:3000/'
 
 	const lessonLinks = ["Introduction", "English", "Pali", "Compare", "Flashcards"];
 
@@ -21,26 +30,38 @@
 
 
 <header>
-	<SideNav {isOpen} {subNavOpen} tocData={lessonsData}/>
+
+	<SideNav {isOpen} 
+					 {subNavOpen} 
+					 tocData={lessonsData}
+					 on:click={setIndices} />
+
 	<p class="pali">
 		Namo tassa bhagavato arahato sammāsambuddhassa
 	</p>
-	<h3>{id}</h3>
-	<h1 title={definition}>{paliname}</h1>
-	<h2>{engname}</h2>
+	<h3>{lesson.id}</h3>
+	<h1 title={lesson.definition}>{lesson.paliname}</h1>
+	<h2>{lesson.engname}</h2>
 
 	<nav>
-  {#each lessonLinks as linkName, i}
-	  {#if i === 0}<a href={`${rootURL}${slug}/`}><button title={linkName}
-						data-index={i}
-						on:click>{linkName}</button></a>
-		  {:else}
-		  <a href={`${rootURL}${slug}/${linkName.toLowerCase()}`}><button title={linkName}
-						data-index={i}
-						on:click>{linkName}</button></a>
-		  {/if}
-	{/each}
-</nav>
+		{#each lessonLinks as linkName, i}
+			{#if i === 0}
+					<a href={`${rootURL}exploring-the-path/${lesson.slug}/`}>
+						<button title={linkName}
+										data-index={i}
+										on:click>{linkName}
+						</button>
+					</a>
+				{:else}
+					<a href={`${rootURL}exploring-the-path/${lesson.slug}/${linkName.toLowerCase()}`}>
+						<button title={linkName}
+										data-index={i}
+										on:click>{linkName}
+						</button>
+				</a>
+				{/if}
+		{/each}
+	</nav>
 </header>
 
 
@@ -78,6 +99,8 @@
 		margin: 10px 0 0 0 ;
 		padding: 0;
 	}
+
+	a {text-decoration:none;}
 	button {
 		border: none;
     border-radius: 5px;
