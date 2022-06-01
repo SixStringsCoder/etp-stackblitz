@@ -8,7 +8,7 @@
     let chapterLesson2 = tocData[1].lessons;
     let chapterLesson3 = tocData[2].lessons;
 
-    const url = "https://sveltejs-kit-template-default-gsbsub--3000.local.webcontainer.io/exploring-the-path/";
+    const url = "http://localhost:3000/exploring-the-path/";
 
     $:console.log(isOpen)
 </script>

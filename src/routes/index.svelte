@@ -5,7 +5,7 @@
 <script>
   import { suttaData } from './exploring-the-path/data.js'
 
-  const url = "https://stackblitz.com/edit/sveltejs-kit-template-default-gsbsub/exploring-the-path/"
+  const url = "https://github-bapgem--3000.local.webcontainer.io/exploring-the-path/"
 
 </script>
 

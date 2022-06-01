@@ -19,7 +19,7 @@
 
 	// export let hiLiteSel;
 
-	const rootURL = 'https://sveltejs-kit-template-default-gsbsub--3000.local.webcontainer.io/'
+	const rootURL = 'http://localhost:3000/'
 
 	const lessonLinks = ["Introduction", "English", "Pali", "Compare", "Flashcards"];
 
